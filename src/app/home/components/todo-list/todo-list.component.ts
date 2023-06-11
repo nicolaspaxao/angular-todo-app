@@ -18,4 +18,8 @@ export class TodoListComponent {
     this.todoList?.splice(index, 1);
   }
 
+  public clearTodoList() {
+    this.todoList = [];
+  }
+
 }

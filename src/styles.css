@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Geologica';
+  margin: 0;
+  padding: 0;
+}
+
+.containerTodo {
+  width: 60vw;
+  background: rgb(224, 224, 224);
+  padding: 20px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

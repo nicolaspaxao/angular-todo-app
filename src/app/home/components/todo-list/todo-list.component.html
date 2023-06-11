@@ -1,0 +1,17 @@
+<headerComponent (emmitItemTodoList)="addItem($event)"></headerComponent>
+<div *ngIf="todoList!.length == 0" class="emptyDiv">
+  <h2>Nenhum item</h2>
+</div>
+
+<div *ngIf="todoList.length != 0" class="divList">
+  <ul>
+    <li *ngFor="let todo of todoList; let i = index">
+      <input type="checkbox" [(ngModel)]="todo.isCompleted">
+      <p [ngClass]="{'checked': todo.isCompleted}">{{todo.nome}}</p>
+      <button (click)="deleteTodo(i)">X</button>
+    </li>
+  </ul>
+</div>
+
+<div style="height: 5px;"></div>
+<clearButton></clearButton>

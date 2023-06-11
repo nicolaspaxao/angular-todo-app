@@ -1,0 +1,23 @@
+header div {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+
+input {
+  width: 70%;
+  padding: 0 10px;
+}
+
+button {
+  cursor: pointer;
+  width: 30%;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+}
